@@ -1,5 +1,5 @@
 <div id="banner" style="
-    background-color: #1a1a1a; 
+    background-color: #dc3545; 
     color: #ffffff; 
     text-align: center; 
     padding: 10px; 
@@ -9,15 +9,22 @@
     width: 100%; 
     z-index: 1000; 
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 ">
-    <span style="font-weight: 300;">This website is our beta version. Please note that bugs may occur.</span>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div style="display: flex; align-items: center;">
+        <i class="material-icons" style="margin-right: 10px; font-size: 24px;">warning</i>
+        <span style="font-weight: 300;">This website is our beta version. Please note that bugs may occur.</span>
+    </div>
     <button onclick="this.parentElement.style.display='none';" style="
         background: none; 
         border: none; 
         color: #ffffff; 
         cursor: pointer; 
-        float: right; 
         font-size: 20px;
         font-family: 'Montserrat', sans-serif;
+        margin-left: auto;
     ">&times;</button>
 </div>
